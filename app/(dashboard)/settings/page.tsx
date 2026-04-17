@@ -28,7 +28,7 @@ export default function SettingsPage() {
               </Link>
             </div>
             <div className="rounded-lg border bg-muted/35 p-4">
-              <p className="font-semibold">Installable app</p>
+              <p className="font-semibold">Web app</p>
               <Link href={siteConfig.appUrl} className="mt-1 block text-primary">
                 {siteConfig.appUrl}
               </Link>

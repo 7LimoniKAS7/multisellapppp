@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { PwaRegister } from "@/components/app/pwa-register";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
@@ -17,16 +16,6 @@ export const metadata: Metadata = {
   },
   applicationName: "Listiq",
   description: siteConfig.description,
-  manifest: "/manifest.webmanifest",
-  icons: {
-    icon: "/app-icon.svg",
-    apple: "/app-icon.svg"
-  },
-  appleWebApp: {
-    capable: true,
-    title: "Listiq",
-    statusBarStyle: "default"
-  },
   openGraph: {
     title: "Listiq",
     description: siteConfig.description,
@@ -43,10 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} min-h-screen antialiased`}>
-        <PwaRegister />
-        {children}
-      </body>
+      <body className={`${inter.variable} min-h-screen antialiased`}>{children}</body>
     </html>
   );
 }
