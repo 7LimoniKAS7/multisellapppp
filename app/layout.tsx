@@ -11,16 +11,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "Listiq | Compliant marketplace listing manager",
-    template: "%s | Listiq"
+    default: "MultiSell | Compliant marketplace listing manager",
+    template: "%s | MultiSell"
   },
-  applicationName: "Listiq",
+  applicationName: "MultiSell",
   description: siteConfig.description,
   openGraph: {
-    title: "Listiq",
+    title: "MultiSell",
     description: siteConfig.description,
     url: siteConfig.siteUrl,
-    siteName: "Listiq",
+    siteName: "MultiSell",
     type: "website"
   }
 };

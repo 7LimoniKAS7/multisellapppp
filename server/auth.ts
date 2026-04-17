@@ -16,7 +16,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         return {
           id: "demo-user",
-          name: "Listiq Demo",
+          name: "MultiSell Demo",
           email: String(credentials.email)
         };
       }

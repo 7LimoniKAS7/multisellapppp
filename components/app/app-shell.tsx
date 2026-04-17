@@ -33,10 +33,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-72 border-r bg-white/92 backdrop-blur md:flex md:flex-col">
         <div className="flex h-16 items-center gap-3 border-b px-6">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-sm font-black text-primary-foreground">
-            LQ
+            MS
           </div>
           <div>
-            <p className="font-semibold leading-tight">Listiq</p>
+            <p className="font-semibold leading-tight">MultiSell</p>
             <p className="text-xs text-muted-foreground">Marketplace ops</p>
           </div>
         </div>

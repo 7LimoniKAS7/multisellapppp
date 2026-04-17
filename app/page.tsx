@@ -17,22 +17,22 @@ const comparison = [
   {
     label: "Approved API publishing",
     manual: "Platform by platform",
-    listiq: "Central review and logs"
+    multisell: "Central review and logs"
   },
   {
     label: "Unsupported marketplaces",
     manual: "Scattered notes",
-    listiq: "Manual queue with required fields"
+    multisell: "Manual queue with required fields"
   },
   {
     label: "Product photos",
     manual: "Repeated uploads",
-    listiq: "Resize, order, and cover control"
+    multisell: "Resize, order, and cover control"
   },
   {
     label: "Audit trail",
     manual: "Hard to reconstruct",
-    listiq: "Every attempt tracked"
+    multisell: "Every attempt tracked"
   }
 ];
 
@@ -52,9 +52,9 @@ export default function LandingPage() {
           <nav className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-sm font-black text-foreground">
-                LQ
+                MS
               </span>
-              <span className="font-semibold">Listiq</span>
+              <span className="font-semibold">MultiSell</span>
             </Link>
             <div className="flex items-center gap-2">
               <Button asChild variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20">
@@ -166,7 +166,7 @@ export default function LandingPage() {
             <div className="grid grid-cols-3 border-b bg-muted/45 p-4 text-sm font-semibold">
               <span>Workflow</span>
               <span>Manual spreadsheet</span>
-              <span>Listiq</span>
+              <span>MultiSell</span>
             </div>
             {comparison.map((row) => (
               <div
@@ -177,7 +177,7 @@ export default function LandingPage() {
                 <span className="text-muted-foreground">{row.manual}</span>
                 <span className="flex items-center gap-2 font-semibold text-primary">
                   <CheckCircle2 className="h-4 w-4" />
-                  {row.listiq}
+                  {row.multisell}
                 </span>
               </div>
             ))}

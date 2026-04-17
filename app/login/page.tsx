@@ -11,9 +11,9 @@ export default function LoginPage() {
       <Card className="w-full max-w-md">
         <CardHeader>
           <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-sm font-black text-white">
-            LQ
+            MS
           </div>
-          <CardTitle>Sign in to Listiq</CardTitle>
+          <CardTitle>Sign in to MultiSell</CardTitle>
           <p className="text-sm text-muted-foreground">
             Use the demo workspace to review products, queues, and account states.
           </p>
@@ -21,11 +21,11 @@ export default function LoginPage() {
         <CardContent className="space-y-4">
           <div className="grid gap-2">
             <Label>Email</Label>
-            <Input defaultValue="demo@listiq.app" type="email" />
+            <Input defaultValue="admin@multisell.app" type="email" />
           </div>
           <div className="grid gap-2">
             <Label>Password</Label>
-            <Input defaultValue="listiq-demo" type="password" />
+            <Input defaultValue="multisell-demo" type="password" />
           </div>
           <Button asChild className="w-full">
             <Link href="/dashboard">Continue to dashboard</Link>
