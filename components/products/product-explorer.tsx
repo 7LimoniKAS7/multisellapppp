@@ -106,7 +106,14 @@ export function ProductExplorer({ products }: { products: Product[] }) {
                   <TableCell>
                     <Link href={`/products/${product.id}`} className="flex items-center gap-3">
                       <div className="relative h-14 w-14 overflow-hidden rounded-lg bg-muted">
-                        <Image src={cover.url} alt={cover.alt} fill className="object-cover" />
+                        <Image
+                          src={cover.url}
+                          alt={cover.alt}
+                          fill
+                          quality={85}
+                          sizes="56px"
+                          className="object-cover object-center"
+                        />
                       </div>
                       <div className="min-w-0">
                         <p className="truncate font-semibold">{product.title}</p>

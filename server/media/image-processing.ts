@@ -6,13 +6,13 @@ export async function prepareMarketplaceImage(input: Buffer) {
 
   const resized = await base
     .resize({
-      width: 1600,
-      height: 1600,
+      width: 1800,
+      height: 1800,
       fit: "inside",
       withoutEnlargement: true
     })
     .jpeg({
-      quality: 82,
+      quality: 88,
       mozjpeg: true
     })
     .toBuffer();
@@ -23,7 +23,7 @@ export async function prepareMarketplaceImage(input: Buffer) {
       fit: "cover"
     })
     .webp({
-      quality: 80
+      quality: 86
     })
     .toBuffer();
 

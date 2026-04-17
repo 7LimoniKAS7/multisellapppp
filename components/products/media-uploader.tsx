@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ImagePlus, Sparkles, Wand2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +15,7 @@ interface PreviewFile {
 
 export function MediaUploader() {
   const inputRef = useRef<HTMLInputElement>(null);
+  const filesRef = useRef<PreviewFile[]>([]);
   const [files, setFiles] = useState<PreviewFile[]>([]);
   const [coverId, setCoverId] = useState<string | null>(null);
 
@@ -25,6 +26,16 @@ export function MediaUploader() {
 
     return `${files.length} image${files.length === 1 ? "" : "s"} queued for compression.`;
   }, [files.length]);
+
+  useEffect(() => {
+    filesRef.current = files;
+  }, [files]);
+
+  useEffect(() => {
+    return () => {
+      filesRef.current.forEach((file) => URL.revokeObjectURL(file.url));
+    };
+  }, []);
 
   function addFiles(fileList: FileList | null) {
     if (!fileList) {
@@ -94,7 +105,14 @@ export function MediaUploader() {
               coverId === file.id && "ring-2 ring-primary"
             )}
           >
-            <Image src={file.url} alt={file.name} fill className="object-cover" />
+            <Image
+              src={file.url}
+              alt={file.name}
+              fill
+              unoptimized
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover object-center"
+            />
             <span className="absolute left-2 top-2 rounded-md bg-white/90 px-2 py-1 text-xs font-semibold">
               {coverId === file.id ? "Cover" : `Photo ${index + 1}`}
             </span>

@@ -116,21 +116,21 @@ export const demoProducts: Product[] = [
     images: [
       {
         id: "img-denim-1",
-        url: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80",
+        url: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1200&q=90",
         alt: "Denim jacket on clothing rack",
         order: 1,
         isCover: true,
-        width: 900,
-        height: 1200
+        width: 1200,
+        height: 1600
       },
       {
         id: "img-denim-2",
-        url: "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=900&q=80",
+        url: "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=1200&q=90",
         alt: "Curated second hand clothing rack",
         order: 2,
         isCover: false,
-        width: 900,
-        height: 1200
+        width: 1200,
+        height: 1600
       }
     ],
     createdAt: "2026-04-14T08:45:00.000Z",
@@ -161,12 +161,12 @@ export const demoProducts: Product[] = [
     images: [
       {
         id: "img-bag-1",
-        url: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
+        url: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&q=90",
         alt: "Black leather crossbody bag",
         order: 1,
         isCover: true,
-        width: 900,
-        height: 1200
+        width: 1200,
+        height: 1600
       }
     ],
     createdAt: "2026-04-11T11:10:00.000Z",
@@ -197,12 +197,12 @@ export const demoProducts: Product[] = [
     images: [
       {
         id: "img-shoes-1",
-        url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+        url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=90",
         alt: "White and red sneakers",
         order: 1,
         isCover: true,
-        width: 900,
-        height: 1200
+        width: 1200,
+        height: 1600
       }
     ],
     createdAt: "2026-04-09T09:00:00.000Z",
@@ -232,12 +232,12 @@ export const demoProducts: Product[] = [
     images: [
       {
         id: "img-ceramic-1",
-        url: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=80",
+        url: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=1200&q=90",
         alt: "Ceramic coffee cups on a table",
         order: 1,
         isCover: true,
-        width: 900,
-        height: 1200
+        width: 1200,
+        height: 1600
       }
     ],
     createdAt: "2026-04-06T15:25:00.000Z",
