@@ -44,7 +44,7 @@ export default function LandingPage() {
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
             <Image
               src="/multisell-hero.png"
-              alt="MultiSell dashboard publishing one listing to multiple marketplaces"
+              alt={`${siteConfig.name} dashboard publishing one listing to multiple marketplaces`}
               fill
               priority
               sizes="(min-width: 1280px) 1280px, 100vw"
@@ -58,7 +58,7 @@ export default function LandingPage() {
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-sm font-black text-foreground">
                 MS
               </span>
-              <span className="font-semibold">MultiSell</span>
+              <span className="font-semibold">{siteConfig.name}</span>
             </Link>
             <div className="flex items-center gap-2">
               <Button asChild variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20">
@@ -170,7 +170,7 @@ export default function LandingPage() {
             <div className="grid grid-cols-3 border-b bg-muted/45 p-4 text-sm font-semibold">
               <span>Workflow</span>
               <span>Manual spreadsheet</span>
-              <span>MultiSell</span>
+              <span>{siteConfig.name}</span>
             </div>
             {comparison.map((row) => (
               <div

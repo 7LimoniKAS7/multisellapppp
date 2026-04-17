@@ -55,7 +55,7 @@ export default function SettingsPage() {
           <CardContent className="grid gap-4">
             <div className="grid gap-2">
               <Label>Workspace name</Label>
-              <Input defaultValue="MultiSell Demo Studio" />
+              <Input defaultValue={`${siteConfig.name} Demo Studio`} />
             </div>
             <div className="grid gap-2">
               <Label>Default currency</Label>

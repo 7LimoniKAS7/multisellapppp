@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { siteConfig } from "@/lib/site-config";
 
 export default function LoginPage() {
   return (
@@ -13,7 +14,7 @@ export default function LoginPage() {
           <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-sm font-black text-white">
             MS
           </div>
-          <CardTitle>Sign in to MultiSell</CardTitle>
+          <CardTitle>Sign in to {siteConfig.name}</CardTitle>
           <p className="text-sm text-muted-foreground">
             Use the demo workspace to review products, queues, and account states.
           </p>
@@ -21,7 +22,7 @@ export default function LoginPage() {
         <CardContent className="space-y-4">
           <div className="grid gap-2">
             <Label>Email</Label>
-            <Input defaultValue="admin@multisell.app" type="email" />
+            <Input defaultValue="admin@multisell.com" type="email" />
           </div>
           <div className="grid gap-2">
             <Label>Password</Label>

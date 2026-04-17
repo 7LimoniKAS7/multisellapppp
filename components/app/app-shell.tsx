@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site-config";
 
 const navigation = [
   { href: "/dashboard", label: "Dashboard", icon: Home },
@@ -36,7 +37,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             MS
           </div>
           <div>
-            <p className="font-semibold leading-tight">MultiSell</p>
+            <p className="font-semibold leading-tight">{siteConfig.name}</p>
             <p className="text-xs text-muted-foreground">Marketplace ops</p>
           </div>
         </div>

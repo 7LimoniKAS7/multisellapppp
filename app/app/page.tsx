@@ -15,8 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Web App",
-  description:
-    "Open the MultiSell dashboard or download the project package from the app landing page."
+  description: `Open the ${siteConfig.name} dashboard or download the project package from the app landing page.`
 };
 
 const appHighlights = [
@@ -35,7 +34,7 @@ export default function AppLaunchPage() {
             <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-sm font-black text-primary-foreground">
               MS
             </span>
-            <span className="font-semibold">MultiSell</span>
+            <span className="font-semibold">{siteConfig.name}</span>
           </Link>
           <div className="flex items-center gap-2">
             <Button asChild variant="outline">
@@ -53,7 +52,7 @@ export default function AppLaunchPage() {
           <div>
             <Badge variant="warning">Web app version</Badge>
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold tracking-normal sm:text-6xl">
-              Run MultiSell from the browser, manage every listing in one place.
+              Run {siteConfig.name} from the browser, manage every listing in one place.
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
               Use the web app to create products, review marketplace readiness, manage

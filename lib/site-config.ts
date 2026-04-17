@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "MultiSell",
+  name: "MultiseLL.com",
   description:
     "Compliant multi-marketplace listing operations for second-hand sellers.",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://127.0.0.1:3000",
