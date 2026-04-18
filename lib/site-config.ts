@@ -1,4 +1,4 @@
-const defaultSiteUrl = "http://multiseller.local:3000";
+const defaultSiteUrl = "https://multiseller-pearl.vercel.app";
 
 function normalizeUrl(value: string | undefined, fallback: string, base?: string) {
   const url = value?.trim() || fallback;
@@ -27,8 +27,8 @@ export const siteConfig = {
   ogImagePath: "/multiseller-og.png",
   githubUrl:
     process.env.NEXT_PUBLIC_GITHUB_REPO_URL ??
-    "https://github.com/taylankuscu6674-art/multisellapppp",
+    "https://github.com/7LimoniKAS7/multisellapppp",
   downloadUrl:
     process.env.NEXT_PUBLIC_DOWNLOAD_URL ??
-    "https://github.com/taylankuscu6674-art/multisellapppp/archive/refs/heads/main.zip"
+    "https://github.com/7LimoniKAS7/multisellapppp/archive/refs/heads/main.zip"
 };

@@ -22,6 +22,10 @@ The port is still visible because Next.js is serving directly on port `3000`. To
 
 ## Vercel preview and production URLs
 
+Current public production URL:
+
+`https://multiseller-pearl.vercel.app`
+
 Set these environment variables in Vercel:
 
 `AUTH_SECRET`
@@ -36,10 +40,10 @@ Set these environment variables in Vercel:
 
 For the first Vercel deployment before a custom domain, set:
 
-`NEXT_PUBLIC_SITE_URL=https://your-vercel-project.vercel.app`
-`NEXT_PUBLIC_APP_URL=https://your-vercel-project.vercel.app/app`
-`AUTH_URL=https://your-vercel-project.vercel.app`
-`NEXTAUTH_URL=https://your-vercel-project.vercel.app`
+`NEXT_PUBLIC_SITE_URL=https://multiseller-pearl.vercel.app`
+`NEXT_PUBLIC_APP_URL=https://multiseller-pearl.vercel.app/app`
+`AUTH_URL=https://multiseller-pearl.vercel.app`
+`NEXTAUTH_URL=https://multiseller-pearl.vercel.app`
 
 After connecting `multiseller.com`, change those values to:
 

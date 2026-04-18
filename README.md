@@ -1,5 +1,5 @@
 # MultiSELLER
 
-Site link: [http://multiseller.local:3000](http://multiseller.local:3000)
+Site link: [https://multiseller-pearl.vercel.app](https://multiseller-pearl.vercel.app)
 
-App link: [http://multiseller.local:3000/app](http://multiseller.local:3000/app)
+App link: [https://multiseller-pearl.vercel.app/app](https://multiseller-pearl.vercel.app/app)
