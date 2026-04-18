@@ -43,16 +43,14 @@ export default function LandingPage() {
         <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-6">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
             <Image
-              src="/multiseller-hero-retina.webp"
+              src="/multisell-hero.png"
               alt={`${siteConfig.name} dashboard publishing one listing to multiple marketplaces`}
               fill
               priority
-              quality={95}
+              unoptimized
               sizes="(min-width: 1280px) 1280px, 100vw"
-              className="object-cover object-[62%_center] sm:object-center"
+              className="object-contain object-center"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.88)_0%,rgba(0,0,0,0.72)_34%,rgba(0,0,0,0.34)_66%,rgba(0,0,0,0.46)_100%)]" />
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/55 to-transparent" />
           </div>
           <nav className="relative z-10 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
