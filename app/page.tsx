@@ -39,8 +39,17 @@ const comparison = [
 export default function LandingPage() {
   return (
     <main className="bg-background">
-      <section className="bg-[#101615] text-white">
-        <div className="mx-auto flex w-full max-w-7xl flex-col px-6 py-6">
+      <section className="relative min-h-[86svh] overflow-hidden bg-[#101615] text-white">
+        <Image
+          src="/multisell-hero.png"
+          alt={`${siteConfig.name} dashboard publishing one listing to multiple marketplaces`}
+          fill
+          priority
+          unoptimized
+          sizes="100vw"
+          className="pointer-events-none object-cover object-center"
+        />
+        <div className="relative z-10 mx-auto flex min-h-[86svh] w-full max-w-7xl flex-col px-6 py-6">
           <nav className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-sm font-black text-foreground">
@@ -109,18 +118,6 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center bg-[#101615] px-0 pb-0">
-          <Image
-            src="/multisell-hero.png"
-            alt={`${siteConfig.name} dashboard publishing one listing to multiple marketplaces`}
-            width={1024}
-            height={576}
-            priority
-            unoptimized
-            sizes="(max-width: 1024px) 100vw, 1024px"
-            className="block h-auto w-full max-w-[1024px] select-none"
-          />
-          </div>
       </section>
 
       <section className="px-6 py-16">
